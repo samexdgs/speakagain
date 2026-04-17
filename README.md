@@ -3,7 +3,7 @@
 **Project #6 of 10** in the Neurological Rehabilitation AI Series by **Samuel Oluwakoya**
 A computer science graduate, foot drop patient, and independent AI health researcher based in Lagos, Nigeria building open-source AI tools for stroke rehabilitation.
 
-**Contact:** Samuel@bloomgatelaw.com · soluwakoyat@gmail.com
+**Contact:** samueloluwakoyat@gmail.com
 **GitHub:** github.com/samexdgs
 **Live series app #1:** fdmapp.streamlit.app
 
@@ -109,54 +109,6 @@ This tool is grounded in the following research:
 
 ---
 
-## Setup
-
-### 1. Clone and install
-```bash
-git clone https://github.com/samexdgs/speakagain.git
-cd speakagain
-pip install -r requirements.txt
-```
-
-### 2. Configure secrets
-
-**Option A — Local dev:** Set environment variables
-```bash
-export BREVO_API_KEY="xkeysib-..."
-export ANTHROPIC_API_KEY="sk-ant-..."   # optional
-```
-
-**Option B — Streamlit Cloud:** Copy `.streamlit/secrets.toml.example` to `.streamlit/secrets.toml` and fill in keys. **Never commit this file.**
-
-### 3. Verify Brevo sender
-Before emails send, verify `Samuel@bloomgatelaw.com` in Brevo dashboard under **Settings → Senders, Domains & IPs**. Without verification, emails fail silently.
-
-### 4. Run locally
-```bash
-streamlit run app.py
-```
-
-### 5. Deploy to Streamlit Cloud
-1. Push this folder to a public GitHub repo
-2. Go to share.streamlit.io
-3. Connect the repo
-4. Paste secrets into **App settings → Secrets**
-5. App auto-deploys on every git push
-
----
-
-## Brevo setup (one-time)
-
-1. Sign up at brevo.com (free tier — 300 emails/day)
-2. **Verify `bloomgatelaw.com` domain** — add SPF, DKIM, DMARC DNS records
-3. **Verify `Samuel@bloomgatelaw.com`** as a sender
-4. Generate API key: **Settings → API Keys → Generate new**
-5. Copy key (starts with `xkeysib-`) into Streamlit secrets as `BREVO_API_KEY`
-
-Test email delivery by clicking "Send today's summary" in the Caregiver tab.
-
----
-
 ## File structure
 
 ```
@@ -172,32 +124,6 @@ speakagain/
 └── README.md               # This file
 ```
 
----
-
-## The 10-app series
-
-1. ✅ **Drop Foot Management App** — fdmapp.streamlit.app *(LIVE)*
-2. ✅ Stroke Recovery Progress Tracker *(built)*
-3. 🔨 Gait Quality Self-Assessment *(in progress)*
-4. 📋 Spasticity Severity Predictor
-5. 📋 Hand Grip Rehabilitation Planner
-6. ⭐ **SpeakAgain — Aphasia Communication Aid** *(THIS PROJECT)*
-7. 📋 Falls Risk Predictor
-8. 📋 Neurological Fatigue Manager
-9. 📋 Caregiver Guidance System
-10. 📋 Stroke Secondary Prevention Calculator
-
----
-
-## Academic output
-
-**Target paper:** "SpeakAgain: An Open-Source AI Communication and Rehabilitation System for Aphasia Patients in Low-Resource Settings — Design, Implementation, and Preliminary Usability Study"
-
-**Target journals:**
-- Journal of NeuroEngineering and Rehabilitation (IF 5.2)
-- JMIR Rehabilitation and Assistive Technologies
-- medRxiv (preprint immediately on completion)
-
 **Novelty:** First open-source aphasia communication tool built specifically for low-resource African settings, with Yoruba/Igbo/Hausa support, evidence-based exercise protocols, and caregiver bridge architecture.
 
 ---
@@ -209,4 +135,4 @@ SpeakAgain is a research and accessibility tool. It has **not** been validated a
 ---
 
 Built by **Samuel Oluwakoya** — Computer Science Graduate, Foot Drop Patient, AI Health Researcher
-Lagos, Nigeria · Samuel@bloomgatelaw.com · soluwakoyat@gmail.com · github.com/samexdgs
+Lagos, Nigeria · samueloluwakoyat@gmail.com · github.com/samexdgs
