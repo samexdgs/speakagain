@@ -1,7 +1,7 @@
 """
 SpeakAgain — AI-powered Aphasia Communication & Rehabilitation Aid
 Project #6 of 10 — Neurological Rehabilitation AI Series
-Samuel Oluwakoya · Lagos, Nigeria · Samuel@bloomgatelaw.com
+Samuel Oluwakoya · Lagos, Nigeria · samueloluwakoyat@gmail.com
 
 Run locally:
     pip install -r requirements.txt
@@ -1083,7 +1083,7 @@ def main():
             page = None
 
         st.markdown("---")
-        st.caption("Built by Samuel Oluwakoya\nSamuel@bloomgatelaw.com\nLagos, Nigeria")
+        st.caption("Built by Samuel Oluwakoya\nsamueloluwakoyat@gmail.com\nLagos, Nigeria")
 
     # Routing
     if not st.session_state.profile:
